@@ -17,7 +17,7 @@ body{
 .mainHeader{
     height: 600px;
     background-image: url("../images/illustration-main.svg"),url("../images/bg-intro.svg");
-    background-size: 60%, cover;
+    background-size: 70%, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center bottom;
 }
@@ -91,12 +91,12 @@ body{
         display: flex;
     }
     .left{
-        width: 40%;
+        width: 45%;
         height: 100vh; 
     }
     .right{
         padding: 40px;
-        width: 60%;
+        width: 55%;
         height: 100vh;
     }
     .footer{
@@ -105,8 +105,7 @@ body{
     }
     .mainHeader{
         height: 100vh;
-        background-size: 60%, 100% 100%;
-        margin-bottom: -1000px;
+        background-size: 70%, 100% 100%;
     }
     .mainNav{
         position: absolute;
