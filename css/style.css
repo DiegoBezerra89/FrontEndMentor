@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(0, 0%, 50%);
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+/*##### HEADER #####*/
+.mainHeader{
+    height: 70vh;
+    background-image: url("../images/illustration-main.svg"),url("../images/bg-intro.svg");
+    background-size: 60%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center bottom;
+}
+.mainHeaderDiv{
+    padding: 40px;
+}
+.mainNav{
+    float: right;
+}
+.mainNavUl{
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+}
+.mainNavLi{
+    margin: 0 0 0 20px;
+}
+.icons{
+    color: white;
+    transition: .3s;
+}
+.icons:hover{
+    color: hsl(243, 86%, 85%);
+}
+
+/*##### MAIN #####*/
+.main{
+    padding: 40px;
+}
+.mainTextTitle{
+    color: hsl(243, 87%, 12%);
+}
+.mainTextPar{
+    margin: 30px 0px 30px;
+}
+.signUpLabel{
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+    display: block;
+}
+.signUp input[type="email"]{
+    padding: 5px;
+    width: 294px;
+    display: block;
+    margin-top: 5px;
+}
+.buttonDefault{
+    background-color: hsl(163, 95%, 43%);
+    padding: 5px 25px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    transition: .2s;
+}
+.buttonDefault:hover{
+    background-color: hsl(163, 82%, 50%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3)
+}
+.footer{
+    text-align: right;
+    padding: 40px;
+}
