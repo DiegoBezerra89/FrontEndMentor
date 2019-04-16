@@ -15,7 +15,7 @@ body{
 
 /*##### HEADER #####*/
 .mainHeader{
-    height: 70vh;
+    height: 600px;
     background-image: url("../images/illustration-main.svg"),url("../images/bg-intro.svg");
     background-size: 60%, cover;
     background-repeat: no-repeat, no-repeat;
