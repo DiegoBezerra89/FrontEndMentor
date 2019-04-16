@@ -35,6 +35,9 @@ body{
 .mainNavLi{
     margin: 0 0 0 20px;
 }
+.logoBlack{
+    display: none;
+}
 .icons{
     color: white;
     transition: .3s;
@@ -80,4 +83,61 @@ body{
 .footer{
     text-align: right;
     padding: 40px;
+}
+
+/*##### MEDIA QUERIES ####*/
+@media screen and (min-width: 768px){
+    .flexContainer{
+        display: flex;
+    }
+    .left{
+        width: 40%;
+        height: 100vh; 
+    }
+    .right{
+        padding: 40px;
+        width: 60%;
+        height: 100vh;
+    }
+    .footer{
+        float: right;
+        margin-right: 40px;
+    }
+    .mainHeader{
+        height: 100vh;
+        background-size: 60%, 100% 100%;
+        margin-bottom: -1000px;
+    }
+    .mainNav{
+        position: absolute;
+        right: 60px;
+        top: 40px;
+    }
+    .mainNavUl{
+        margin-top: 0px;
+    }
+    .icons{
+        color: hsl(243, 87%, 12%);
+        font-size: 1.4em;
+    }
+    .main{
+        margin-top: 20%;
+    }
+    .logoWhite{
+        display: none;
+    }
+    .logoBlack{
+        display: block;
+    }
+    .signUp input[type="email"]{
+        display: inline-block;
+        padding: 8px;
+        border: none;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.1);
+        margin-right: 5px;
+    }
+    .buttonDefault{
+        display: inline-block;
+        padding: 8px 40px;
+    }
 }

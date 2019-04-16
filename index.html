@@ -13,39 +13,47 @@
   <title>Frontend Mentor | Beta sign up split layout Challenge</title>
 </head>
 <body>
-  <header class="mainHeader">
-    <div class="mainHeaderDiv">
-      <img src="images/logo-white.svg" class="logo">
-      <nav class="mainNav">
-        <ul class="mainNavUl">
-          <li class="mainNavLi"><a href="https://twitter.com/diegozerrad" target="_blank"><i class="fab fa-twitter icons"></i></a></li>
-          <li class="mainNavLi"><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f icons"></i></a></li>
-          <li class="mainNavLi"><a href="https://github.com/diegobezerra89" target="_blank"><i class="fab fa-github icons"></i></a></li>
-        </ul>
-      </nav>
+  <div class="flexContainer">
+    <div class="flexItem left">
+      <header class="mainHeader">
+        <div class="mainHeaderDiv">
+          <img src="images/logo-white.svg" class="logoWhite">
+          <nav class="mainNav">
+            <ul class="mainNavUl">
+              <li class="mainNavLi"><a href="https://twitter.com/diegozerrad" target="_blank"><i class="fab fa-twitter icons"></i></a></li>
+              <li class="mainNavLi"><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f icons"></i></a></li>
+              <li class="mainNavLi"><a href="https://github.com/diegobezerra89" target="_blank"><i class="fab fa-github icons"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </div>
-  </header>
-  <main class="main">
-    <section class="mainText">
-      <h1 class="mainTextTitle">All your files in one secure location, accessible anywhere.</h1>
-      <p class="mainTextPar">
-        Fylo stores all your most important files in one secure location. 
-        Access them wherever you need, share and collaborate with friends, 
-        family and co-workers.
-      </p>
-    </section>
-    <section class="signUp">
-      <form method="GET"class="signUpForm">
-        <label for="email" class="signUpLabel">Sign up for early access</label>
-          <input type="email" id="email">
-          <input type="submit" class="buttonDefault" value="Sign Up">
-      </form>
-    </section>
-  </main>
+    <div class="flexItem right">
+      <img class="logoBlack" src="images/logo.svg">
+      <main class="main">
+        <section class="mainText">
+          <h1 class="mainTextTitle">All your files in one secure location, accessible anywhere.</h1>
+          <p class="mainTextPar">
+            Fylo stores all your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family and co-workers.
+          </p>
+        </section>
+        <section class="signUp">
+          <form method="GET"class="signUpForm">
+            <label for="email" class="signUpLabel">Sign up for early access</label>
+              <input type="email" id="email">
+              <input type="submit" class="buttonDefault" value="Sign Up">
+          </form>
+        </section>
+      </main>
+      <footer class="footer">   
+          <a href="#">Privacy Policy</a>
+      </footer>
+    </div>
+  </div>
   <!-- <aside>
   </aside> -->
-  <footer class="footer">   
-    <a href="#">Privacy Policy</a>
-  </footer>
+  
 </body>
 </html>
