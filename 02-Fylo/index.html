@@ -2,90 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Diego Bezerra Martins">
+  <meta name="keywords" content="CSS grid Fylo Frontend mentor exercises">
+  <meta name="description" content="A landing page to test my skills">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Fylo landing page with features grid section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Sign In
-  Sign Up 
-
-  All Your Files In One Secure Location, Accessible Anywhere.
-  Get Started
-
-  Stay Productive, Wherever You Are
-
-  All platforms, all devices, all your files
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
-
-  Real-time collaboration
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
-
-  Security you can trust
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
-
-  Automatic backups
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula leo, 
-  ac accumsan magna tellus sed leo.
-
-  Get Early Access Today
-
-  It only takes a minute to sign up and our free starter tier is extremely 
-  generous. If you have any questions, our support team would be happy to 
-  help you.
-
-  Join
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  Fylo
-
-  Desktop App
-  Mobile App
-  Pricing
-  Feature
-
-  Company
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Support
-
-  Contact Us
-  Terms
-  Privacy
-
-  Receive updates from us, including tips and tricks on how to improve your workflow.
-
-  Join
-
+  <header class="mainHeader">
+    <nav class="mainNav">
+      <a href="#" class="buttonDefault buttonTransparent">Sign In</a>
+      <a href="#" class="buttonDefault">Sign Up</a>
+    </nav>
+    <article class="mainIntro">
+      <h1>All Your Files In One Secure Location, Accessible Anywhere.</h1>
+      <a href="#" class="buttonDefault buttonGetStarted">Get Started</a>
+    </article>
+  </header>
+  <main id="main">
+    <article class="mainTitle">
+      <h1>Stay Productive, Wherever You Are</h1>
+    </article>
+    <img class="mainImage" src="images/illustration-features.svg">
+    <section id="mainInfo">
+      <article class="mainInfoCard">
+        <h2>All platforms, all devices, all your files</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+          egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
+          leo, ac accumsan magna tellus sed leo.
+        </p>
+      </article>
+      <article class="mainInfoCard">
+        <h2>Real-time collaboration</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+          egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
+          leo, ac accumsan magna tellus sed leo.
+        </p>
+      </article>
+      <article class="mainInfoCard">
+        <h2>Security you can trust</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+          egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
+          leo, ac accumsan magna tellus sed leo.
+        </p>
+      </article>
+      <article class="mainInfoCard">
+        <h2>Automatic backups</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+          egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
+          leo, ac accumsan magna tellus sed leo.
+        </p>
+      </article>
+    </section>
+    <section id="earlyAccess">
+      <article class="earlyAccessText">
+        <h1>Get Early Access Today</h1>
+        <div class="form">
+          <label for="earlyAccesEmail">
+            It only takes a minute to sign up and our free starter tier is extremely 
+            generous. If you have any questions, our support team would be happy to 
+            help you.
+          </label>
+          <form method="GET">
+            <input type="email" id="earlyAccesEmail" placeholder="email@example.com">
+            <input type="submit" class="buttonDefault" value="Join">
+          </form>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- <aside>
+  </aside> -->
   <footer>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-    </p>
+    <adress class="contact">
+      <ul>
+        <li><img src="images/icon-phone.svg" class="contactIcon">Phone: +1-543-123-4567</li>
+        <li><img src="images/icon-email.svg" class="contactIcon">example@fylo.com</li>
+      </ul>    
+    </adress>
+    <article class="contactUpdate">
+      <label for="newsletter">Receive updates from us, including tips and tricks on how to improve your workflow.</label>
+      <input type="email" id="newsletter" palceholder="email@example.com">
+    </article>
+    <section class="footerInfos">
+      <article>
+        <h3>Fylo</h3>
+        <ul class="footerUl">
+          <li>Desktop App</li>
+          <li>Mobile App</li>
+          <li>Pricing</li>
+          <li>Feature</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Company</h3>
+        <ul class="footerUl">
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Support</h3>
+        <ul class="footerUl">
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </ul>
+      </article>
+    </section>
   </footer>
 </body>
 </html>
