@@ -7,15 +7,25 @@
   <meta name="keywords" content="CSS grid Fylo Frontend mentor exercises">
   <meta name="description" content="A landing page to test my skills">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with features grid section</title>
 </head>
 <body>
   <header class="mainHeader">
-    <nav class="mainNav">
-      <a href="#" class="buttonDefault buttonTransparent">Sign In</a>
-      <a href="#" class="buttonDefault">Sign Up</a>
-    </nav>
-    <section class="mainIntro">
+    <div class="mainHeaderDiv">
+      <img src="images/logo.svg" class="headerLogo">
+      <nav class="mainNav">
+        <ul class="mainNavUl">
+          <li><a href="#" class="buttonTransparent">Sign In</a></li>
+          <li><a href="#" class="buttonDefault">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mainHeaderDiv2">
+      <img src="images/illustration-hero.svg" class="headerImage">
+    </div>
+    <section id="mainIntro">
       <h1>All Your Files In One Secure Location, Accessible Anywhere.</h1>
       <a href="#" class="buttonDefault buttonGetStarted">Get Started</a>
     </section>
