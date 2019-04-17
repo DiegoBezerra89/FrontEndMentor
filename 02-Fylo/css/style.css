@@ -11,8 +11,9 @@ body {
 .header{
     position: relative;
     display: block;
-    height: 600px;
+    height: 800px;
     background-image: linear-gradient(to bottom right ,#120b6e, #7a76c4 );
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
 }
 .header-box {
     padding: 30px;
@@ -30,6 +31,7 @@ body {
     border-radius: 3px;
     transition: .2s;
     font-size: .8em;
+    margin-top: 20px;
 }
 .button-default:hover {
     box-shadow: 1px 1px 4px rgba(0,0,0,.4);
@@ -40,24 +42,56 @@ body {
 .button-transparent {
     background-color: none;
 }
-.button-green{
+.button-green {
     background-color: hsl(163, 95%, 43%);
 }
-.button-green:hover{
+.button-green:hover {
     background-color: hsl(163, 96%, 50%);
 }
-.header-image-box {
+.header-image-box{
+    text-align: center;
+}
+.header-image{
+    height: 300px;
+}
+/* .header-image-box {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
 }
 .header-image {
     height: 300px;
-    display: block;
     transform: translate(-50%, -50%)
+} */
+.header-title-box {
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 0 30px;
+    margin-top: 30px;
 }
-
-
+.header-title {
+    font-weight: 300;
+}
+.button-get-started {
+    color: white;
+    text-decoration: none;
+    padding: 5px 1em;
+    border-radius: 3px;
+    transition: .2s;
+    font-size: 1.2em;
+    margin-top: 20px;
+    width: 200px;
+    display: inline-block;
+    background-color: hsl(163, 95%, 43%);
+}
+.button-get-started:hover {
+    box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+    background-color: hsl(163, 96%, 50%);
+}
+.button-get-started:active {
+    box-shadow: none;
+}
 /* # Front-end Style Guide
 
 ## Layout
