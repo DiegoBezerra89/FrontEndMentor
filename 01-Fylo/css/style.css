@@ -104,8 +104,9 @@ body{
         margin-right: 40px;
     }
     .mainHeader{
-        height: 100vh;
+        height: 100%;
         background-size: 70%, 100% 100%;
+        background-image: url("../images/illustration-main.svg"), linear-gradient(to bottom right, #110a6d,#7c78c5);
     }
     .mainNav{
         position: absolute;
