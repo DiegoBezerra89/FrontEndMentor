@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     line-height: 1.7;
+    color: #777;
 }
 .header{
     position: relative;
@@ -92,6 +93,41 @@ body {
 }
 .button-get-started:active {
     box-shadow: none;
+}
+
+/*##### Main #####*/
+.main{
+    margin-top: 40px;
+}
+.main-intro-box{
+    text-align: center;
+    padding: 60px;
+}
+.main-intro-title{
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.main-intro-image-box{
+    margin-top: 80px;
+}
+.main-intro-image{
+    height: 250px;
+}
+.main-description{
+    padding: 30px;
+}
+/* .main-description-section{
+
+} */
+.main-description-title{
+    color: hsl(243, 87%, 12%);
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.main-description-section{
+    margin: 40px 0;
 }
 /* # Front-end Style Guide
 
