@@ -12,7 +12,7 @@ body {
 .header{
     position: relative;
     display: block;
-    height: 800px;
+    height: 700px;
     background-image: linear-gradient(to bottom right ,#120b6e, #7a76c4 );
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
 }
@@ -78,7 +78,7 @@ body {
 .button-get-started {
     color: white;
     text-decoration: none;
-    padding: 5px 1em;
+    padding: 8px 1em;
     border-radius: 3px;
     transition: .2s;
     font-size: 1.2em;
@@ -98,6 +98,7 @@ body {
 /*##### Main #####*/
 .main{
     margin-top: 40px;
+    position: relative;
 }
 .main-intro-box{
     text-align: center;
@@ -105,14 +106,15 @@ body {
 }
 .main-intro-title{
     color: hsl(243, 87%, 12%);
-    font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 .main-intro-image-box{
-    margin-top: 80px;
+    margin-bottom: 40px; 
+    display: block;
+    text-align: center;
 }
 .main-intro-image{
-    height: 220px;
+    height: 300px;
 }
 .main-description{
     padding: 30px;
@@ -223,11 +225,129 @@ input[type="submit"]{
 .footer-li-title{
     font-weight: 600;
     margin-bottom: 5px;
+    font-size: 1.2em;
 }
 .footer-li-links a{
     color: white;
     text-decoration: none;
 }
+
+
+
+/* ###### MEDIA QUERIES ####### */
+
+@media screen and (min-width: 768px){
+    .header-flex{
+        display: flex;
+        flex-direction: row-reverse;
+        
+        padding: 30px;
+    }
+    .header-box{
+        padding: 60px;
+    }
+    .header-nav {
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    .header-image-box{
+        width: 50%;
+    }
+    .header-title-box{
+        /* margin-top: 80px; */
+        width: 50%;
+        text-align: left;
+        padding: 60px;
+    }
+    .button-get-started{
+        text-align: center;
+    }
+
+    /*##### MAIN #####*/
+
+    .main-grid-container{
+        display: grid;
+        grid-template-areas: 
+            "one    two    three"
+            "one   two1    three1";
+            padding: 40px;
+            grid-gap: 30px;
+    }
+    .main-description-section{
+        margin: 0 0;
+    }
+    .grid-item{
+        padding: 0 30px;
+        text-align: left;
+    }
+    .main-grid-item-image{
+        grid-area: one;
+    }
+    .main-intro-image{
+        height: 300px;
+    }
+    .main-grid-item-1{
+        grid-area: two;
+    }
+    .main-grid-item-2{
+        grid-area: three;
+    }
+    .main-grid-item-3{
+        grid-area: two1;
+    }
+    .main-grid-item-4{
+        grid-area: three1;
+    }
+    .early-access-box{
+        padding: 100px 300px;
+    }
+    .footer-logo{
+        margin-top: 20px;
+    }
+    .footer{
+        padding-top: 80px;
+    }
+    .footer-box{
+        display: grid;
+        grid-template-areas: "one two three";
+        grid-template-columns: .5fr 1fr 1fr;
+    }
+    .footer-address-box{
+        margin-top: 90px;
+    }
+    .footer-links{
+        display: flex;
+        grid-area: two;
+        padding: 0 40px;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+    }
+    .footer-section-links:nth-child(2){
+        margin-left: 30px;
+    }
+    .footer-section-links:nth-child(3){
+        margin-left: 30px;
+    }
+    .footer-news-box{
+        grid-area: three;
+        margin-top: 100px;
+        padding: 0 40px;
+        text-align: left;
+    }
+    .footer-news-box input[type=submit]{
+        display: block;
+    }
+    .footer-news-box input[type=email]{
+        display: block;
+    }
+    
+}
+
+
+
+
 /* # Front-end Style Guide
 
 ## Layout
